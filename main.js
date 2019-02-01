@@ -58,4 +58,7 @@ function   quiz_over() {
     document.getElementById("score-tracker").style ="display: none";
     document.getElementById("game-over").style = "visibility: visible; font-size: 30px;";
     document.getElementById("score").innerHTML = `You Scored ${correct} out of ${questions.length}.`;
+
+    document.getElementById("button-container").style = "visisbility: visible"
 }
+
