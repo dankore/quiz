@@ -1,4 +1,4 @@
-const questions = [
+const questions = [  
     {
         question: "What is 10 + 10?",
         options: ["100", "20", "30", "40"],
@@ -49,14 +49,13 @@ function load_question () {
             //if questions are completed, quiz over otherwise reload questions
 
             question_number >= questions.length ? quiz_over() : load_question();
-
-            
         }
     });
 }
 
-function game_over() {
-    document.querySelector()
+function   quiz_over() {
+    document.getElementById("game_display").style = "display: none";
+    document.getElementById("score-tracker").style ="display: none";
+    document.getElementById("game-over").style = "visibility: visible; font-size: 30px;";
+    document.getElementById("score").innerHTML = `You Scored ${correct} out of ${questions.length}.`;
 }
-
-// link https://codepen.io/Digicrest/pen/XOWPdY?editors=0010
