@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>Quiz</h1>
+    <h4 id="question_count"></h4>
 <div id="game_display">
     <h2 id="question"></h2>
     <div id="options"></div>
@@ -18,11 +19,11 @@
         Correct questions <span id="correct">0 of 0</span>
     </div>
     <div style="visibility: hidden" id="game-over">
-        <h2>You Completed the Quiz</h2>
+        <h2>You Completed the Quiz!</h2>
         <h4 id="score"></h4>
     </div>
     <div  style="visibility: hidden" id="button-container">
-<button id="button" onClick="load_question()">Take Quiz Again</button>
+<button id="button" onclick="reload_page()">Take Quiz Again</button>
     </div>
     
     <div class="twitter">

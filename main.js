@@ -15,15 +15,17 @@ const questions = [
 
 let correct = 0;
 let question_number = 0;
+let questionCount = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
     load_question();
 });
 
 function load_question () {
-    let current_question = questions[question_number];
 
-    // get question and output it to #questions
+    let current_question = questions[question_number];
+    
+    // get question and output it to #question
     document.querySelector("#question").innerHTML = questions[question_number].question;
     // get options and output it to #options
     const options = document.querySelector("#options");
@@ -60,5 +62,9 @@ function   quiz_over() {
     document.getElementById("score").innerHTML = `You Scored ${correct} out of ${questions.length}.`;
 
     document.getElementById("button-container").style = "visisbility: visible"
+}
+
+function reload_page() {
+    location.reload();
 }
 
